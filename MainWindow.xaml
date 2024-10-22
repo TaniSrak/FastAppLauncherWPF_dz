@@ -1,0 +1,30 @@
+﻿<Window x:Class="FastAppLauncherWPF_dz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fast App Launcher" Height="400" Width="600">
+    <Grid>
+        <!-- Кнопки запуска -->
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+            <TextBlock Text="Запуск приложений" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <Button Content="Калькулятор" Width="200" Click="btnCalc_Click"/>
+            <Button Content="Командная строка" Width="200" Click="btnCmd_Click"/>
+            <Button Content="MS Word" Width="200" Click="btnWord_Click"/>
+            <Button Content="MS Excel" Width="200" Click="btnExcel_Click"/>
+            <Button Content="Internet Explorer" Width="200" Click="btnIE_Click"/>
+            <Button Content="Браузер по умолчанию" Width="200" Click="btnDefaultBrowser_Click"/>
+        </StackPanel>
+
+        <!-- Кнопки закрытия -->
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10">
+            <TextBlock Text="Закрытие приложений" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <Button Content="Закрыть Калькулятор" Width="200" Click="btnCloseCalc_Click"/>
+            <Button Content="Закрыть Командную строку" Width="200" Click="btnCloseCmd_Click"/>
+            <Button Content="Закрыть MS Word" Width="200" Click="btnCloseWord_Click"/>
+            <Button Content="Закрыть MS Excel" Width="200" Click="btnCloseExcel_Click"/>
+            <Button Content="Закрыть Internet Explorer" Width="200" Click="btnCloseIE_Click"/>
+            <Button Content="Закрыть Браузер по умолчанию" Width="200" Click="btnCloseDefaultBrowser_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
